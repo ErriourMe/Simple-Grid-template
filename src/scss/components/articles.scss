@@ -1,0 +1,16 @@
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  @media(max-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media(max-width: 667px) {
+    grid-template-columns: 1fr;
+  }
+  margin: 0 -8px;
+  padding: 62px 0;
+
+  &__card {
+    margin: 8px;
+  }
+}

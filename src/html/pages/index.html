@@ -1,0 +1,34 @@
+<% var data = {
+    title: "Сохраненные статьи",
+    author: "Erriour (Vladimir Gonchar)",
+    pagename: "index"
+}; %>
+<%= _.template(require('./../layouts/header.html').default)(data) %>
+
+<div class="container">
+  <%= _.template(require('./../components/pageHeader.html').default)(data) %>
+</div>
+
+<div class="bg-gray">
+  <div class="container">
+    <div class="articles">
+      <div class="articles__card">
+        <%= _.template(require('./../components/articleCard.html').default)(data) %>
+      </div>
+      <div class="articles__card">
+        <%= _.template(require('./../components/articleCard.html').default)(data) %>
+      </div>
+      <div class="articles__card">
+        <%= _.template(require('./../components/articleCard.html').default)(data) %>
+      </div>
+      <div class="articles__card">
+        <%= _.template(require('./../components/articleCard.html').default)(data) %>
+      </div>
+      <div class="articles__card">
+        <%= _.template(require('./../components/articleCard.html').default)(data) %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('./../layouts/footer.html').default)(data) %>

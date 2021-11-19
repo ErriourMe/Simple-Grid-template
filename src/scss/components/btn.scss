@@ -1,0 +1,54 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 19px;
+  transition: 0.2s ease;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: transparent;
+
+  .icon {
+    width: 18px;
+    height: 16px;
+    object-fit: contain;
+  }
+
+  &--non-active {
+    pointer-events: none;
+  }
+
+  & span + .icon, & span + svg {
+    margin-left: 12px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--outline {
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 100px;
+
+    &-dark {
+      border-color: #D1D2D6;
+
+      &:hover {
+        border-color: #1A1B22;
+        opacity: 1;
+      }
+    }
+  }
+
+  &--white {
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+  }
+}
